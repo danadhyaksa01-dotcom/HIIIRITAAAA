@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f0e6">
+  <meta name="description" content="website kecil yang dibuat Aksa khusus buat Rita. iya, Rita yang itu WKWKWK.">
+  <title>buat rita, dari aksa ✷</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Kembali ke awal">a. / r.</a>
+    <span class="top-note">a tiny website for one specific human</span>
+    <span class="sticker" aria-hidden="true">BUKAN<br>WEBSITE<br>BIASA™</span>
+  </header>
+
+  <main>
+    <section class="screen hero active" id="home" data-screen="0">
+      <div class="hero-kicker"><span class="tiny-dot"></span> made with questionable confidence</div>
+      <p class="eyebrow">haloo, ada orang di sana?</p>
+      <h1>HAIII<br><span class="scribble">RITAAA</span> WKWKWK<span class="emoji">😭</span></h1>
+      <p class="intro">AKHIRNYA BUAT WEBSITE JUGA NI YEEE,<br>ASS UR REQQ WKWKWK</p>
+      <p class="small-note">jujur gatau kenapa bisa sampe bikin beginian.<br>yaudah terlanjur, silakan dinikmati 😔✋</p>
+      <button class="button button-dark" id="startBtn">coba pencet dehh <span>↗</span></button>
+      <div class="hero-doodle doodle-star" aria-hidden="true">✳</div>
+      <div class="hero-doodle doodle-arrow" aria-hidden="true">↘</div>
+      <div class="hero-foot"><span>BUAT RITA DOANG.</span><span>(jangan disebar dulu malu)</span></div>
+    </section>
+
+    <section class="screen" id="song" data-screen="1" hidden>
+      <div class="section-top"><span class="section-index">01 — SOUNDTRACK</span><span class="tiny-label">auto play kalau browser mengizinkan</span></div>
+      <h2>ada lagu buat<br><span class="scribble">kamuuu</span> 🎧</h2>
+      <p class="body-copy">lagunya otomatis diputar pas website dibuka. kalo browser belum ngizinin, pencet tombol play yaa WKWKWK.</p>
+      <div class="music-card">
+        <div class="album-art" aria-hidden="true">
+          <span class="album-sun"></span><span class="album-line"></span>
+          <span class="album-label">SIDE A<br><b>for rita</b></span>
+          <span class="album-doodle">♫</span>
+        </div>
+        <div class="track-info">
+          <span class="now-playing"><span class="equalizer"><i></i><i></i><i></i></span> A LITTLE SONG FOR U</span>
+          <h3 id="trackTitle">beadabuuuu</h3>
+          <p id="trackArtist">artis favorit (ganti di script.js yaa)</p>
+          <audio id="audio" preload="auto" autoplay>
+            <source src="assets/lagu-rita.mpeg" type="audio/mpeg">
+            Browser kamu belum mendukung audio.
+          </audio>
+          <div class="audio-controls">
+            <button id="playBtn" class="play-button" aria-label="Putar lagu">▶</button>
+            <div class="track-progress">
+              <input id="seekBar" type="range" min="0" max="100" value="0" step="0.1" aria-label="Posisi lagu">
+              <div class="time-row"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+            </div>
+          </div>
+          <p class="audio-hint" id="audioHint">mencoba memutar lagu otomatis ✨</p>
+        </div>
+      </div>
+      <div class="margin-note"></div>
+      <div class="nav-row"><button class="text-button back-btn">← balik</button><button class="button button-dark next-btn">lanjuutt →</button></div>
+    </section>
+
+    <section class="screen" id="notes" data-screen="2" hidden>
+      <div class="section-top"><span class="section-index">02 — BUKA KALO MAU</span><span class="tiny-label">no pressure, bestie</span></div>
+      <h2>catatan kecil<br><span class="scribble">dari author</span></h2>
+      <p class="body-copy"></p>
+      <div class="note-grid">
+        <button class="note-card note-yellow" data-note="0"><span class="note-pin">✳</span><span class="note-number">NOTE 01</span><strong>pesan dari author</strong><span class="note-cta">buka bentar ↗</span></button>
+        <button class="note-card note-pink" data-note="1"><span class="note-pin">♡</span><span class="note-number">NOTE 02</span><strong>kenapa ada website ini?</strong><span class="note-cta">aku juga bingung ↗</span></button>
+        <button class="note-card note-blue" data-note="2"><span class="note-pin">✎</span><span class="note-number">NOTE 03</span><strong>disclaimerr</strong><span class="note-cta">penting nih katanya ↗</span></button>
+        <button class="note-card note-lilac" data-note="3"><span class="note-pin">☆</span><span class="note-number">NOTE 04</span><strong>lil bit shy, but...</strong><span class="note-cta">jangan salting dulu ↗</span></button>
+      </div>
+      <div class="nav-row"><button class="text-button back-btn">← balik</button><button class="button button-dark next-btn">ada lagi nih →</button></div>
+    </section>
+
+    <section class="screen" id="message" data-screen="3" hidden>
+      <div class="section-top"><span class="section-index">03 — SERIUS DIKIT</span><span class="tiny-label">dikit doang sumpah</span></div>
+      <div class="letter">
+        <div class="letter-tape"></div>
+        <p class="letter-label">catatan yang tidak ditulis di chat</p>
+        <h2>buat kamu,<br>Rita.</h2>
+        <p>sebenernya ini cuma website requestan rita barusan sih 20 oktober 2026 wkwkwkwk</p>
+        <p>trus lucu ga sii bisa bikin sesuatu yang emang khusus buat ritaaa wkwkwk,</p>
+        <p>semoga ndoroo sukaa yaaa kalo jelek jangan dihujat yaa, developer pemula ini sudah berusaha semaksimal dengan waktu yang mepettt</p>
+        <div class="letter-sign">— aksa <span>✳</span></div>
+      </div>
+      <div class="nav-row"><button class="text-button back-btn">← balik</button><button class="button button-dark next-btn">OK LAST THING 😭 →</button></div>
+    </section>
+
+    <section class="screen ending" id="ending" data-screen="4" hidden>
+      <div class="section-top"><span class="section-index">04 — PERTANYAAN SANGAT PENTING</span><span class="tiny-label">harap jawab dengan bijak</span></div>
+      <div class="ending-stamp" aria-hidden="true">FINAL<br>BOSS</div>
+      <p class="eyebrow">sebelum kamu pergi...</p>
+      <h2>ehh ritaa,<br>tapi kalo aku udah bikinin website khusus buat kamuu,</h2>
+      <h1>berarti sekarang<br>aku jadi siapa dongg?? <span class="scribble">WKWKWK</span> 😭</h1>
+      <p class="body-copy">pilih yang bener yaa, ini pertanyaan sangat penting bagi kelangsungan hidup developer.</p>
+      <div class="answer-buttons">
+        <button id="specialBtn" class="button button-dark">someone speciall?? 👀</button>
+        <button id="friendBtn" class="button button-light">cuma temen kokk WKWKWK</button>
+      </div>
+      <div class="answer-result" id="answerResult" role="status" aria-live="polite" hidden></div>
+      <button id="restartBtn" class="text-button restart" hidden>↺ ulang dari awal</button>
+      <p class="ending-small">apa pun jawabannya, makasih udah jadi part of my journeyy yaaa</p>
+    </section>
+  </main>
+
+  <footer class="footer"><span>© aksa's tiny corner of the internet</span><span>made love and rasa rindu (iyuh)</span></footer>
+
+  <div class="modal-backdrop" id="noteModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Tutup catatan">×</button>
+      <span class="modal-overline" id="modalOverline">NOTE 01</span>
+      <h3 id="modalTitle">pesan dari author</h3>
+      <p id="modalText"></p>
+      <button class="button button-dark modal-done" id="modalDone">okee noted WKWK</button>
+    </div>
+  </div>
+</body>
+</html>
